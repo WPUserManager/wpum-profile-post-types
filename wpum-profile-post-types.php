@@ -15,12 +15,12 @@ License:     GPLv3+
  *
  * @return array
  */
-function wpumwpp_template_paths( $paths ) {
+function wpumpp_template_paths( $paths ) {
 	$paths[] = dirname( __FILE__ ) . '/templates';
 
 	return $paths;
 }
-add_filter( 'wpum_template_paths', 'wpumwpp_template_paths' );
+add_filter( 'wpum_template_paths', 'wpumpp_template_paths' );
 
 /**
  * Register new settings for the addon.
