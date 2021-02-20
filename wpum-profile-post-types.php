@@ -66,6 +66,9 @@ function wpumpp_get_post_types() {
 }
 
 function wpumpp_init() {
+	if ( ! function_exists( 'wpum_get_option' ) ) {
+		return;
+	}
 	$post_types = wpum_get_option( 'profile_cpts', array() );
 
 	if ( empty( $post_types ) ) {
